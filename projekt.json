@@ -1,0 +1,17 @@
+{
+  "id": "P13",
+  "status": "initialisiert",
+  "businessImplemented": false,
+  "fixture": "beispieldaten/stoerungen.json",
+  "format": "json",
+  "expectedRecords": 60,
+  "starter": "src/trainieren.py",
+  "command": "python src/trainieren.py",
+  "implementationTickets": [
+    "P13-T01",
+    "P13-T02",
+    "P13-T03",
+    "P13-T04"
+  ],
+  "language": "de"
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "S1",
+    "meldung": "Verbindung zum Demorechner nicht möglich unspezifischer Fehler",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S2",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S3",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S4",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S5",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S6",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S7",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S8",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert unspezifischer Fehler",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S9",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S10",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S11",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S12",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S13",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S14",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S15",
+    "meldung": "Demoanwendung nicht verfügbar unspezifischer Fehler",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S16",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S17",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S18",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S19",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S20",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S21",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S22",
+    "meldung": "Verbindung zum Demorechner nicht möglich unspezifischer Fehler",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S23",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S24",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S25",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S26",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S27",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S28",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S29",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert unspezifischer Fehler",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S30",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S31",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S32",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S33",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S34",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S35",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S36",
+    "meldung": "Demoanwendung nicht verfügbar unspezifischer Fehler",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S37",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S38",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S39",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S40",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S41",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S42",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S43",
+    "meldung": "Verbindung zum Demorechner nicht möglich unspezifischer Fehler",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S44",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S45",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S46",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S47",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S48",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S49",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S50",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert unspezifischer Fehler",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S51",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S52",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S53",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S54",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S55",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S56",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S57",
+    "meldung": "Demoanwendung nicht verfügbar unspezifischer Fehler",
+    "klasse": "anwendung",
+    "synthetisch": true
+  },
+  {
+    "id": "S58",
+    "meldung": "Verbindung zum Demorechner nicht möglich",
+    "klasse": "netzwerk",
+    "synthetisch": true
+  },
+  {
+    "id": "S59",
+    "meldung": "Zugriff auf Demoverzeichnis verweigert",
+    "klasse": "zugriff",
+    "synthetisch": true
+  },
+  {
+    "id": "S60",
+    "meldung": "Demoanwendung nicht verfügbar",
+    "klasse": "anwendung",
+    "synthetisch": true
+  }
+]
