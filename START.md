@@ -13,7 +13,13 @@ Das Startprogramm meldet den Initialisierungsstand. Fachfunktionen sind bewusst 
 
 ## Nächste Aufgabe
 
-Klassen, Datenleckrisiko und Baseline beschreiben.
+P13-T01 erneut prüfen, ohne ein Modell zu trainieren; dafür genügt die Python-Standardbibliothek:
+
+~~~powershell
+uv --cache-dir ausgabe/uv-zwischenspeicher run --offline --python 3.12 python -X utf8 nachweise/P13-T01-pruefen.py
+~~~
+
+Der Check schreibt nachweise/P13-T01-pruefung.json. Erwartet: 60 eindeutige Kennungen, 42 Trainings- und 18 Testfälle, keine gemeinsame Kennung und sechs gemeinsame Meldungstexte. Anschließend erst im geplanten nächsten Abschnitt die Datenpipeline und das Modell entwickeln.
 
 ## Technische Quellen
 
