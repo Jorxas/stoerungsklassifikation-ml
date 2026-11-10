@@ -1,12 +1,12 @@
 {
   "id": "P13",
-  "status": "P13-T01 abgeschlossen; Modell und Auswertung offen",
+  "status": "P13-T02 am 9. November 2026 lokal abgeschlossen: Pipeline nur auf Trainingsdaten angepasst; Baseline und Testauswertung offen",
   "businessImplemented": false,
   "fixture": "beispieldaten/stoerungen.json",
   "format": "json",
   "expectedRecords": 60,
   "starter": "src/trainieren.py",
-  "command": "python src/trainieren.py",
+  "command": "uv --cache-dir ausgabe/uv-zwischenspeicher run --offline --python 3.12 --default-index https://pypi.org/simple --with scikit-learn==1.9.1 --with pandas==3.1.0 --with numpy==2.5.4 python -X utf8 src/trainieren.py",
   "implementationTickets": [
     "P13-T01",
     "P13-T02",

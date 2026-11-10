@@ -1,0 +1,10 @@
+{
+  "zeit": "2026-11-09T20:54:52.330Z",
+  "offline": true,
+  "versionen": {
+    "scikitLearn": "1.9.1",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4"
+  },
+  "ergebnis": "Alle drei Bibliotheken im projektlokalen UV-Cache erfolgreich offline importiert; Prozessstatus 0."
+}
