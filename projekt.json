@@ -1,12 +1,12 @@
 {
   "id": "P13",
-  "status": "P13-T02 am 9. November 2026 lokal abgeschlossen: Pipeline nur auf Trainingsdaten angepasst; Baseline und Testauswertung offen",
+  "status": "P13-T03 am 11. November 2026 lokal abgeschlossen: Baseline und Modell auf 18 Testfällen verglichen; P13-T04 offen",
   "businessImplemented": false,
   "fixture": "beispieldaten/stoerungen.json",
   "format": "json",
   "expectedRecords": 60,
-  "starter": "src/trainieren.py",
-  "command": "uv --cache-dir ausgabe/uv-zwischenspeicher run --offline --python 3.12 --default-index https://pypi.org/simple --with scikit-learn==1.9.1 --with pandas==3.1.0 --with numpy==2.5.4 python -X utf8 src/trainieren.py",
+  "starter": "src/auswerten.py",
+  "command": "uv --cache-dir ausgabe/uv-zwischenspeicher run --offline --python 3.12 --default-index https://pypi.org/simple --with scikit-learn==1.9.1 --with pandas==3.1.0 --with numpy==2.5.4 python -X utf8 src/auswerten.py",
   "implementationTickets": [
     "P13-T01",
     "P13-T02",
@@ -31,6 +31,6 @@
   "mehrheitsbaseline": {
     "regel": "Haeufigste Klasse ausschliesslich im Training zaehlen und immer vorhersagen.",
     "gleichstand": "Alphabetisch kleinste Klassenbezeichnung waehlen: anwendung vor netzwerk vor zugriff.",
-    "spaetere_auswertung": "Trefferanteil und Konfusionsmatrix auf derselben festen Testmenge wie das Modell; noch nicht ausgefuehrt."
+    "auswertung": "Trefferanteil, Konfusionsmatrix und Fehlerliste auf derselben festen Testmenge wie das Modell; P13-T03 tatsächlich ausgeführt."
   }
 }

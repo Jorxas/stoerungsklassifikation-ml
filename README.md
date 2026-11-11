@@ -1,6 +1,6 @@
 # Störungen mit messbarer Baseline klassifizieren
 
-Stand: 9. November 2026 — **P13-T02 lokal abgeschlossen: Pipeline ausschließlich mit Trainingsdaten angepasst**. Baseline und Testauswertung bleiben offen. Das ursprüngliche Basisziel vom 8. November wurde verfehlt; der Fortsetzungsplan sieht offene Entwicklung bis 15. November vor. Geschätzter Basisaufwand: 3 Stunden ohne Einrichtung und Erweiterungen.
+Stand: 11. November 2026 — **P13-T03 lokal abgeschlossen: Baseline und Modell auf denselben 18 Testfällen verglichen**. P13-T04 bleibt offen. Das ursprüngliche Basisziel vom 8. November wurde verfehlt; der Fortsetzungsplan sieht offene Entwicklung bis 15. November vor. Geschätzter Basisaufwand: 3 Stunden ohne Einrichtung und Erweiterungen.
 
 Ein Team möchte synthetische Störungsmeldungen klassifizieren und Training von Auswertung trennen.
 
@@ -20,7 +20,15 @@ Die [Pipeline](src/trainieren.py) verwendet TF-IDF-Textmerkmale und MultinomialN
 
 Die [lokale Abnahme](nachweise/P13-T02-pruefen.py) protokolliert die tatsächlichen Anpassungsaufrufe. Geänderte Testtexte und Testklassen sowie umgekehrte Dateireihenfolge beeinflussen die gelernten Parameter nicht; überlappende Kennungen werden vor der Anpassung abgewiesen. Alle 60 synthetischen Quelldatensätze bleiben unverändert. [Neuer Ergebnisnachweis](nachweise/P13-T02-pruefung-2026-11-09.json) und [Befehle samt Wiederholungsdateien](nachweise/P13-T02-wiederaufnahme-2026-11-09.md).
 
-Keine Baseline, Testvorhersage oder Güteberechnung ausgeführt. P13-T03 und die übergreifenden Lastenheftkriterien bleiben offen; industrielle Übertragbarkeit ist nicht belegt.
+T02 endete ohne Baseline, Testvorhersage oder Güteberechnung. Der folgende Abschnitt dokumentiert die getrennte Auswertung in T03; übergreifende Lastenheftkriterien werden hier nicht abgehakt.
+
+## Geprüfte Auswertung — P13-T03
+
+Die [Auswertung](src/auswerten.py) verwendet unverändert die feste Aufteilung und Trainingspipeline. Die Trainingsklassen sind gleich häufig; die vorab festgelegte alphabetische Regel wählt deshalb „anwendung“ als Mehrheitsbaseline. Auf denselben 18 Testfällen erreicht die Baseline 6/18 Treffer (33,33 %), das Modell 18/18 (100 %). [Ausgeführte Abnahme mit beiden Matrizen und allen Vorhersagen](nachweise/P13-T03-pruefung-2026-11-11.json).
+
+Zeilen der Konfusionsmatrizen sind die tatsächlichen Klassen, Spalten die Vorhersagen, jeweils in der Reihenfolge anwendung, netzwerk, zugriff. Baseline: `[[6,0,0],[6,0,0],[6,0,0]]`; Modell: `[[6,0,0],[0,6,0],[0,0,6]]`. Die zwölf Baselinefehler betreffen sämtliche Netzwerk- und Zugriffsfälle. Beispiel S43: „Verbindung zum Demorechner nicht möglich unspezifischer Fehler“, tatsächlich netzwerk, Baseline anwendung, Modell netzwerk. Die Baseline ignoriert den Meldungstext. Beim Modell wurden keine Fehler beobachtet; es wird kein Modellfehler erfunden.
+
+Alle 18 Testfälle verwenden einen der sechs bereits im Training vorhandenen Texte. Disjunkte Kennungen ergeben damit keine unabhängige Bewertung neuer Texte; 100 % belegen keine industrielle Übertragbarkeit. Keine Modelloptimierung anhand der Testdaten vorgenommen und keine Daten hinzugefügt. [Wiederholbare Befehle, Fehleranalyse und benötigte Dateien](nachweise/P13-T03-abnahme-2026-11-11.md). T04 und die übergreifende Gesamtabnahme bleiben offen.
 
 ## Einstieg
 

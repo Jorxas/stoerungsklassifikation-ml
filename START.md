@@ -26,4 +26,17 @@ Der Check schreibt [P13-T02-pruefung-2026-11-09.json](nachweise/P13-T02-pruefung
 
 Die [Voraussetzungenprüfung vom 3. November](nachweise/P13-T02-blockade.md) endete blockiert. Eine spätere unterbrochene Bearbeitung hinterließ Teiländerungen; laut übergebener Startanleitung endete der Lauf vom 4. November mit „workspace routing discovery failed“. Am 9. November wurden die Bibliotheken [offline importiert](nachweise/P13-T02-voraussetzungen-bereit-2026-11-09.json) und anschließend Pipeline und Abnahme tatsächlich ausgeführt.
 
-Nur P13-T02 ist damit beendet. Baseline, Testvorhersagen, Gütewerte und Fehleranalyse gehören zu P13-T03. Die sechs gemeinsamen Meldungstexte in Training und Test begrenzen die spätere Aussagekraft; industrielle Übertragbarkeit ist nicht belegt. Keine Lastenheftkriterien zusätzlich abgehakt. Frühere Versuche und heutige Fertigstellung stehen getrennt im [Journal](ARBEITSJOURNAL.md).
+Damit war am 9. November nur P13-T02 beendet. Die gesonderte Auswertung vom 11. November steht im folgenden Abschnitt. Keine Lastenheftkriterien zusätzlich abgehakt. Frühere Versuche und Fertigstellungen stehen getrennt im [Journal](ARBEITSJOURNAL.md).
+
+## Auswertung und begrenzte Abnahme — P13-T03
+
+~~~powershell
+uv --cache-dir ausgabe/uv-zwischenspeicher run --offline --python 3.12 --default-index https://pypi.org/simple --with scikit-learn==1.9.1 --with pandas==3.1.0 --with numpy==2.5.4 python -X utf8 src/auswerten.py
+uv --cache-dir ausgabe/uv-zwischenspeicher run --offline --python 3.12 --default-index https://pypi.org/simple --with scikit-learn==1.9.1 --with pandas==3.1.0 --with numpy==2.5.4 python -X utf8 nachweise/P13-T03-pruefen.py
+~~~
+
+Der erste Befehl gibt den Vergleich als JSON aus. Der zweite prüft Daten- und Pipelineerhalt, dieselben 18 Testkennungen, Trainingsmehrheit, Matrixachsen, Treffer und Fehlerlisten. Zwei absichtlich falsche Vorhersagen dienen ausschließlich als Gegenprobe der Auswertungsfunktion; sie sind keine beobachteten Modellfehler. Testklassen werden zusätzlich nur in Speicherkopien geändert und die Dateireihenfolge umgekehrt; die Vorhersagen bleiben gleich.
+
+Beobachtet: Baseline 6/18, Modell 18/18; zwölf Baselinefehler, keine Modellfehler. Alle 18 Testtexte kommen schon im Training vor. Der Nachweis belegt diese synthetische Übung, keine Übertragbarkeit auf neue Meldungen. Versionen wie oben; keine neuen Pakete erforderlich.
+
+Der Check schreibt [P13-T03-pruefung-2026-11-11.json](nachweise/P13-T03-pruefung-2026-11-11.json); Wiederholung ersetzt diesen Nachweis mit dem tatsächlichen neuen Zeitpunkt. [Befehle, Ausgaben, Analyse und vollständige Wiederholungsdateien](nachweise/P13-T03-abnahme-2026-11-11.md). P13-T04 wurde nicht begonnen. Sicherung und spätere Veröffentlichung durch den Koordinator bleiben getrennt von der lokalen Fertigstellung.

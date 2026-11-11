@@ -1,0 +1,9 @@
+{
+  "zeitpunkt": "2026-11-11T03:05:53+01:00",
+  "ergebnis": "bestanden",
+  "direkte_ausgabe_gleich_abnahme": true,
+  "eingabepruefsummen_unveraendert": true,
+  "befehl": "git diff --check -- .",
+  "exitcode": 0,
+  "ausgabe": "warning: in the working copy of '13-stoerungsklassifikation/ARBEITSJOURNAL.md', CRLF will be replaced by LF the next time Git touches it\n"
+}
