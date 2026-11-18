@@ -1,6 +1,6 @@
 {
   "id": "P13",
-  "status": "P13-T03 am 11. November 2026 lokal abgeschlossen: Baseline und Modell auf 18 Testfällen verglichen; P13-T04 offen",
+  "status": "P13-T04 am 17. November 2026 lokal abgeschlossen: drei beobachtete Baselinefehler und synthetische Datengrenzen dokumentiert; übergreifende Gesamtabnahme offen",
   "businessImplemented": false,
   "fixture": "beispieldaten/stoerungen.json",
   "format": "json",

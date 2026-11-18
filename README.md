@@ -1,6 +1,6 @@
 # Störungen mit messbarer Baseline klassifizieren
 
-Stand: 11. November 2026 — **P13-T03 lokal abgeschlossen: Baseline und Modell auf denselben 18 Testfällen verglichen**. P13-T04 bleibt offen. Das ursprüngliche Basisziel vom 8. November wurde verfehlt; der Fortsetzungsplan sieht offene Entwicklung bis 15. November vor. Geschätzter Basisaufwand: 3 Stunden ohne Einrichtung und Erweiterungen.
+Stand: 17. November 2026 — **P13-T04 lokal abgeschlossen: drei beobachtete Baselinefehler und die künstlichen Daten erklärt**. Das ursprüngliche Basisziel vom 8. November und das Fortsetzungsziel vom 15. November wurden verfehlt; diese einzelne Phase wurde ausdrücklich für die jetzige Bearbeitung freigegeben. Geschätzter Basisaufwand: 3 Stunden ohne Einrichtung und Erweiterungen.
 
 Ein Team möchte synthetische Störungsmeldungen klassifizieren und Training von Auswertung trennen.
 
@@ -28,7 +28,23 @@ Die [Auswertung](src/auswerten.py) verwendet unverändert die feste Aufteilung u
 
 Zeilen der Konfusionsmatrizen sind die tatsächlichen Klassen, Spalten die Vorhersagen, jeweils in der Reihenfolge anwendung, netzwerk, zugriff. Baseline: `[[6,0,0],[6,0,0],[6,0,0]]`; Modell: `[[6,0,0],[0,6,0],[0,0,6]]`. Die zwölf Baselinefehler betreffen sämtliche Netzwerk- und Zugriffsfälle. Beispiel S43: „Verbindung zum Demorechner nicht möglich unspezifischer Fehler“, tatsächlich netzwerk, Baseline anwendung, Modell netzwerk. Die Baseline ignoriert den Meldungstext. Beim Modell wurden keine Fehler beobachtet; es wird kein Modellfehler erfunden.
 
-Alle 18 Testfälle verwenden einen der sechs bereits im Training vorhandenen Texte. Disjunkte Kennungen ergeben damit keine unabhängige Bewertung neuer Texte; 100 % belegen keine industrielle Übertragbarkeit. Keine Modelloptimierung anhand der Testdaten vorgenommen und keine Daten hinzugefügt. [Wiederholbare Befehle, Fehleranalyse und benötigte Dateien](nachweise/P13-T03-abnahme-2026-11-11.md). T04 und die übergreifende Gesamtabnahme bleiben offen.
+Alle 18 Testfälle verwenden einen der sechs bereits im Training vorhandenen Texte. Disjunkte Kennungen ergeben damit keine unabhängige Bewertung neuer Texte; 100 % belegen keine industrielle Übertragbarkeit. Keine Modelloptimierung anhand der Testdaten vorgenommen und keine Daten hinzugefügt. [Wiederholbare Befehle, Fehleranalyse und benötigte Dateien](nachweise/P13-T03-abnahme-2026-11-11.md). Die übergreifende Gesamtabnahme bleibt offen.
+
+## Dokumentierte Grenzen — P13-T04
+
+Die [lokale Abnahme](nachweise/P13-T04-pruefen.py) führt den unveränderten Vergleich erneut aus. Drei tatsächlich beobachtete Fehler der Mehrheitsbaseline:
+
+| Kennung | Meldung | Soll | Baseline | Modell |
+|---|---|---|---|---|
+| S43 | Verbindung zum Demorechner nicht möglich unspezifischer Fehler | netzwerk | anwendung | netzwerk |
+| S44 | Zugriff auf Demoverzeichnis verweigert | zugriff | anwendung | zugriff |
+| S50 | Zugriff auf Demoverzeichnis verweigert unspezifischer Fehler | zugriff | anwendung | zugriff |
+
+Alle drei Fälle haben dieselbe methodische Ursache: Die Baseline ignoriert den Text und sagt bei 14 Trainingsfällen je Klasse durch alphabetischen Gleichstand immer anwendung voraus. S43 zeigt eine Netzwerkmeldung, S44 eine Zugriffsmeldung, S50 eine Zugriffsmeldung mit unspezifischem Zusatz; der Zusatz ändert die konstante Baseline nicht. Dies sind drei Fehlerfälle, keine drei unabhängigen Fehlerursachen. Beim Modell weiterhin kein Fehler beobachtet.
+
+Die 60 Meldungen sind vollständig synthetisch und als solche markiert, je Klasse 20. Sie enthalten nur sechs unterschiedliche Texte: drei einfache Demomeldungen, jeweils mit oder ohne „unspezifischer Fehler“. Alle 18 Testfälle wiederholen Trainingstexte. Das Modell kann diese wiederkehrenden Formulierungen zuordnen; die gemessenen 100 % prüfen keine unbekannten Formulierungen, realen Klassenhäufigkeiten oder betrieblichen Störungen. Es liegen keine echten Unternehmensdaten und kein Nachweis industrieller Übertragbarkeit vor. Eine Aufteilung nach Textgruppen oder neue Daten wären eigene spätere Arbeit und wurden nicht umgesetzt.
+
+[Ergebnis mit drei Fällen, vollständigem Vergleich und Prüfsummen](nachweise/P13-T04-pruefung-2026-11-17.json), [Befehle und Wiederholungsdateien](nachweise/P13-T04-abnahme-2026-11-17.md). Nur der Dokumentationsendpunkt von T04 ist abgenommen; LASTENHEFT.md und die übergreifende Gesamtabnahme bleiben unverändert offen. Kein weiterer Produktzugang oder praktische Kompetenz in einer nicht ausgeführten Variante wird behauptet. Fertigstellung jetzt lokal, spätere Sicherung und Veröffentlichung getrennt durch den Koordinator.
 
 ## Einstieg
 

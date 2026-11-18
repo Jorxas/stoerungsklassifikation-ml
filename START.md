@@ -39,4 +39,16 @@ Der erste Befehl gibt den Vergleich als JSON aus. Der zweite prüft Daten- und P
 
 Beobachtet: Baseline 6/18, Modell 18/18; zwölf Baselinefehler, keine Modellfehler. Alle 18 Testtexte kommen schon im Training vor. Der Nachweis belegt diese synthetische Übung, keine Übertragbarkeit auf neue Meldungen. Versionen wie oben; keine neuen Pakete erforderlich.
 
-Der Check schreibt [P13-T03-pruefung-2026-11-11.json](nachweise/P13-T03-pruefung-2026-11-11.json); Wiederholung ersetzt diesen Nachweis mit dem tatsächlichen neuen Zeitpunkt. [Befehle, Ausgaben, Analyse und vollständige Wiederholungsdateien](nachweise/P13-T03-abnahme-2026-11-11.md). P13-T04 wurde nicht begonnen. Sicherung und spätere Veröffentlichung durch den Koordinator bleiben getrennt von der lokalen Fertigstellung.
+Der Check schreibt [P13-T03-pruefung-2026-11-11.json](nachweise/P13-T03-pruefung-2026-11-11.json); Wiederholung ersetzt diesen Nachweis mit dem tatsächlichen neuen Zeitpunkt. [Befehle, Ausgaben, Analyse und vollständige Wiederholungsdateien](nachweise/P13-T03-abnahme-2026-11-11.md). P13-T04 war bei diesem Abschluss noch offen. Sicherung und spätere Veröffentlichung durch den Koordinator bleiben getrennt von der lokalen Fertigstellung.
+
+## Drei Fehlerfälle und Datengrenzen prüfen — P13-T04
+
+Im Projektordner, mit denselben vorhandenen Bibliotheken:
+
+~~~powershell
+uv --cache-dir ausgabe/uv-zwischenspeicher run --offline --python 3.12 --default-index https://pypi.org/simple --with scikit-learn==1.9.1 --with pandas==3.1.0 --with numpy==2.5.4 python -X utf8 nachweise/P13-T04-pruefen.py
+~~~
+
+Der Check führt Training und Vergleich erneut aus, vergleicht das vollständige Ergebnis mit der T03-Vorleistung und prüft die unveränderten Daten, Quellen und festen Kennungen. Erwartet: S43, S44 und S50 sind echte Baselinefehler; insgesamt zwölf Baselinefehler und kein Modellfehler. 60 synthetische Meldungen, sechs unterschiedliche Texte, alle 18 Testtexte im Training. Die drei ausgewählten Fälle und ihre gemeinsame Ursache stehen im README. Keine künstlich falschen Vorhersagen oder neuen Daten erforderlich.
+
+Ausgabe: [P13-T04-pruefung-2026-11-17.json](nachweise/P13-T04-pruefung-2026-11-17.json). Eine Wiederholung ersetzt nur diesen Ergebnisnachweis mit neuem tatsächlichem Zeitpunkt; Vorleistungsnachweise bleiben erhalten. [Abnahme mit allen Wiederholungsdateien](nachweise/P13-T04-abnahme-2026-11-17.md). Nur T04 abgeschlossen, keine Gesamtabnahme oder industrielle Übertragbarkeit belegt.
