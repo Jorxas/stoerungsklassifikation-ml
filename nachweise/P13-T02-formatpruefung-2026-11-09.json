@@ -1,0 +1,11 @@
+{
+    "ticket":  "P13-T02",
+    "zeitpunkt":  "2026-11-09T23:00:27+01:00",
+    "befehl":  "git diff --check -- .",
+    "prozessstatus":  0,
+    "ergebnis":  "bestanden",
+    "ausgabe":  [
+                    "warning: in the working copy of \u002713-stoerungsklassifikation/ARBEITSJOURNAL.md\u0027, CRLF will be replaced by LF the next time Git touches it",
+                    "warning: in the working copy of \u002713-stoerungsklassifikation/START.md\u0027, CRLF will be replaced by LF the next time Git touches it"
+                ]
+}
