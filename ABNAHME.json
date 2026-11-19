@@ -1,0 +1,16 @@
+{
+  "projekt": "P13",
+  "phase": 4,
+  "snapshot": "a757e20f7ffda4d389769222aabc958de2bdaca04f0ee65c52469ea69b723208",
+  "quellcommit": "6c2034ad062caef953e748632642912eaaa22d35",
+  "lokal_committet_am": "2026-11-18T08:50:38+01:00",
+  "technisch_gesichert_am": "2026-11-17T17:27:26.360Z",
+  "unveraenderlicher_quellstand_geprueft": true,
+  "redaktionell_angepasst": [
+    "START.md",
+    "nachweise/P13-T02-formatpruefung-2026-11-09.json",
+    "nachweise/P13-T03-auswertung-2026-11-11.json"
+  ],
+  "hinweis": "Lokale Pfade in Berichten entfernt; Quellprogramme nicht übersetzt oder simuliert. Die erste öffentliche Übernahme ist kein nachträglich erfundener Entwicklungsschritt. Native Produktnachweise behalten ihre ursprünglichen tatsächlichen Zeiten.",
+  "veroeffentlichungskopie_fachlich_geprueft_am": "2026-11-18T15:22:10.295Z"
+}
