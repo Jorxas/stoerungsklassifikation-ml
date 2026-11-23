@@ -15,6 +15,22 @@ Ein kleiner Textklassifikator soll gegen eine nachvollziehbare Mehrheitsbaseline
 | 3 | Vergleich mit Mehrheitsbaseline | Ja |
 | 4 | Fehlerfälle und Grenzen der Stichprobe | Ja |
 
+## Demo
+
+Live: <https://jorxas.github.io/stoerungsklassifikation-ml/> (Deutsch, umschaltbar auf Französisch mit dem Schalter DE | FR oder `?lang=fr`).
+
+Die Seite zeigt einen Anwendungsfall: Störungsmeldungen einer IT-Hotline sollen automatisch einer Gruppe (Anwendung, Netzwerk, Zugriff) zugeordnet werden. Gezeigt werden die Ausgabe eines echten Laufs von `src/trainieren.py` und `src/auswerten.py` (Baseline 6/18, Modell 18/18, Konfusionsmatrizen, alle 18 Testfälle) und eine Eingabe, mit der die Parameter des trainierten Modells auf eigene Meldungen angewendet werden. Die Grenzen (nur sechs verschiedene Texte, alle Testtexte schon im Training) stehen auf der Seite.
+
+Neu erzeugen (im Projektordner):
+
+```powershell
+uv run --python 3.12 --with scikit-learn==1.9.1 --with pandas==3.1.0 --with numpy==2.5.4 python -X utf8 demo/erzeugen.py
+$env:NODE_PATH = "<Ordner mit node_modules, die puppeteer-core enthalten>"
+node tools/browser-pruefen.cjs
+```
+
+`demo/erzeugen.py` schreibt `demo/daten/lauf.json`. `tools/browser-pruefen.cjs` prüft die Seite unter dem Pfad `/stoerungsklassifikation-ml/` auf Laufzeitfehler, externe Anfragen, waagerechtes Scrollen bei 390 px, Sprachwechsel DE/FR und vergleicht die Rechnung im Browser mit der Python-Referenz. Der Inhalt von `demo/` liegt unverändert auf dem Branch `gh-pages`.
+
 ## Fachlicher Nutzen
 
 ML-Pipeline, Datentrennung, Konfusionsmatrix und kritische Interpretation von Kennzahlen.
