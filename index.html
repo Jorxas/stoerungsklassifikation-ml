@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Störungsmeldungen zuordnen</title>
+<meta name="description" content="Demo des Lernprojekts Störungsklassifikation: echter Lauf eines Textklassifikators im Vergleich mit einer Mehrheitsbaseline.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%235b3fd0%27/%3E%3Cpath d=%27M8 22l5-6 4 3 7-9%27 stroke=%27white%27 stroke-width=%273%27 fill=%27none%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span class="badge" data-i="badge"></span>
+    <div class="langsw" role="group" aria-label="Sprache / Langue">
+      <button type="button" data-lang="de" aria-pressed="true">DE</button>
+      <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+    </div>
+  </header>
+  <main>
+    <h1 data-i="h1"></h1>
+    <p class="lead" data-i="lead"></p>
+
+    <section class="card" aria-labelledby="s-aufgabe">
+      <div class="grid2">
+        <div>
+          <h2 id="s-aufgabe" data-i="aufgabeT"></h2>
+          <p data-i="aufgabe1"></p>
+          <p data-i="aufgabe2"></p>
+        </div>
+        <div>
+          <h2 data-i="datenT"></h2>
+          <p data-i="daten1"></p>
+          <div id="texte"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="s-ergebnis">
+      <h2 id="s-ergebnis" data-i="ergebnisT"></h2>
+      <p><span class="tag" data-i="echt"></span> <span class="fine" id="laufmeta"></span></p>
+      <div class="kpis" id="kpis"></div>
+      <div class="grid2" id="matrizen"></div>
+      <p class="fine" data-i="matrixHinweis"></p>
+
+      <h3 data-i="falleT"></h3>
+      <label class="chk"><input type="checkbox" id="nurFehler"> <span id="nurFehlerText"></span></label>
+      <ul class="cases" id="faelle"></ul>
+    </section>
+
+    <section class="card" aria-labelledby="s-probe">
+      <h2 id="s-probe" data-i="probeT"></h2>
+      <p data-i="probe1"></p>
+      <label for="eingabe" class="fine" data-i="eingabeLabel"></label>
+      <input type="text" id="eingabe" autocomplete="off" spellcheck="false" maxlength="200">
+      <div class="chips" id="beispiele" role="group"></div>
+      <div id="probeErg" aria-live="polite"></div>
+      <p class="fine" data-i="probeHinweis"></p>
+    </section>
+
+    <section class="card" aria-labelledby="s-grenzen">
+      <h2 id="s-grenzen" data-i="grenzenT"></h2>
+      <ul class="plain" id="grenzen"></ul>
+    </section>
+
+    <section class="card" aria-labelledby="s-lauf">
+      <h2 id="s-lauf" data-i="laufT"></h2>
+      <p data-i="lauf1"></p>
+      <pre id="befehl"></pre>
+      <p class="fine" data-i="lauf2"></p>
+      <p><a href="https://github.com/Jorxas/stoerungsklassifikation-ml" data-i="repoLink"></a></p>
+    </section>
+  </main>
+  <footer data-i="fuss"></footer>
+</div>
+<script src="klassifizieren.js"></script>
+<script src="inhalt.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

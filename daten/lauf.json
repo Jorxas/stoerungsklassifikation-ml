@@ -1,0 +1,1032 @@
+{
+ "zeit": "2026-11-23T09:00:23+00:00",
+ "umgebung": {
+  "python": "3.12.14",
+  "scikit-learn": "1.9.1",
+  "pandas": "3.1.0",
+  "numpy": "2.5.4"
+ },
+ "befehl": "src/auswerten.py (vergleichen) und src/trainieren.py (modell_trainieren), unverändert",
+ "ergebnis": {
+  "klassenreihenfolge": [
+   "anwendung",
+   "netzwerk",
+   "zugriff"
+  ],
+  "matrixachsen": "Zeilen: tatsächliche Klasse; Spalten: vorhergesagte Klasse.",
+  "trainingsanzahlen": {
+   "anwendung": 14,
+   "netzwerk": 14,
+   "zugriff": 14
+  },
+  "baselineklasse": "anwendung",
+  "baseline": {
+   "treffer": 6,
+   "testanzahl": 18,
+   "trefferanteil": 0.3333333333333333,
+   "konfusionsmatrix": [
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     0
+    ]
+   ],
+   "vorhersagen": [
+    {
+     "id": "S43",
+     "meldung": "Verbindung zum Demorechner nicht möglich unspezifischer Fehler",
+     "soll": "netzwerk",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S44",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S45",
+     "meldung": "Demoanwendung nicht verfügbar",
+     "soll": "anwendung",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S46",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S47",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S48",
+     "meldung": "Demoanwendung nicht verfügbar",
+     "soll": "anwendung",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S49",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S50",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert unspezifischer Fehler",
+     "soll": "zugriff",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S51",
+     "meldung": "Demoanwendung nicht verfügbar",
+     "soll": "anwendung",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S52",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S53",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S54",
+     "meldung": "Demoanwendung nicht verfügbar",
+     "soll": "anwendung",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S55",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S56",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S57",
+     "meldung": "Demoanwendung nicht verfügbar unspezifischer Fehler",
+     "soll": "anwendung",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S58",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S59",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S60",
+     "meldung": "Demoanwendung nicht verfügbar",
+     "soll": "anwendung",
+     "vorhersage": "anwendung"
+    }
+   ],
+   "fehler": [
+    {
+     "id": "S43",
+     "meldung": "Verbindung zum Demorechner nicht möglich unspezifischer Fehler",
+     "soll": "netzwerk",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S44",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S46",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S47",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S49",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S50",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert unspezifischer Fehler",
+     "soll": "zugriff",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S52",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S53",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S55",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S56",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S58",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S59",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "anwendung"
+    }
+   ]
+  },
+  "modell": {
+   "treffer": 18,
+   "testanzahl": 18,
+   "trefferanteil": 1.0,
+   "konfusionsmatrix": [
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     0,
+     6,
+     0
+    ],
+    [
+     0,
+     0,
+     6
+    ]
+   ],
+   "vorhersagen": [
+    {
+     "id": "S43",
+     "meldung": "Verbindung zum Demorechner nicht möglich unspezifischer Fehler",
+     "soll": "netzwerk",
+     "vorhersage": "netzwerk"
+    },
+    {
+     "id": "S44",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "zugriff"
+    },
+    {
+     "id": "S45",
+     "meldung": "Demoanwendung nicht verfügbar",
+     "soll": "anwendung",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S46",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "netzwerk"
+    },
+    {
+     "id": "S47",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "zugriff"
+    },
+    {
+     "id": "S48",
+     "meldung": "Demoanwendung nicht verfügbar",
+     "soll": "anwendung",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S49",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "netzwerk"
+    },
+    {
+     "id": "S50",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert unspezifischer Fehler",
+     "soll": "zugriff",
+     "vorhersage": "zugriff"
+    },
+    {
+     "id": "S51",
+     "meldung": "Demoanwendung nicht verfügbar",
+     "soll": "anwendung",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S52",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "netzwerk"
+    },
+    {
+     "id": "S53",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "zugriff"
+    },
+    {
+     "id": "S54",
+     "meldung": "Demoanwendung nicht verfügbar",
+     "soll": "anwendung",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S55",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "netzwerk"
+    },
+    {
+     "id": "S56",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "zugriff"
+    },
+    {
+     "id": "S57",
+     "meldung": "Demoanwendung nicht verfügbar unspezifischer Fehler",
+     "soll": "anwendung",
+     "vorhersage": "anwendung"
+    },
+    {
+     "id": "S58",
+     "meldung": "Verbindung zum Demorechner nicht möglich",
+     "soll": "netzwerk",
+     "vorhersage": "netzwerk"
+    },
+    {
+     "id": "S59",
+     "meldung": "Zugriff auf Demoverzeichnis verweigert",
+     "soll": "zugriff",
+     "vorhersage": "zugriff"
+    },
+    {
+     "id": "S60",
+     "meldung": "Demoanwendung nicht verfügbar",
+     "soll": "anwendung",
+     "vorhersage": "anwendung"
+    }
+   ],
+   "fehler": []
+  },
+  "gemeinsame_meldungstexte": 6,
+  "testfaelle_mit_bekanntem_text": 18,
+  "grenze": "Synthetische, wiederholte Texte; kein Nachweis für neue Texte oder industrielle Übertragbarkeit. Keine Modelloptimierung anhand der Testdaten."
+ },
+ "datensatz": [
+  {
+   "id": "S1",
+   "meldung": "Verbindung zum Demorechner nicht möglich unspezifischer Fehler",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S2",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S3",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S4",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S5",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S6",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S7",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S8",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert unspezifischer Fehler",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S9",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S10",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S11",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S12",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S13",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S14",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S15",
+   "meldung": "Demoanwendung nicht verfügbar unspezifischer Fehler",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S16",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S17",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S18",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S19",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S20",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S21",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S22",
+   "meldung": "Verbindung zum Demorechner nicht möglich unspezifischer Fehler",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S23",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S24",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S25",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S26",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S27",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S28",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S29",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert unspezifischer Fehler",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S30",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S31",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S32",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S33",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S34",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S35",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S36",
+   "meldung": "Demoanwendung nicht verfügbar unspezifischer Fehler",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S37",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S38",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S39",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S40",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S41",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S42",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S43",
+   "meldung": "Verbindung zum Demorechner nicht möglich unspezifischer Fehler",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S44",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S45",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S46",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S47",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S48",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S49",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S50",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert unspezifischer Fehler",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S51",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S52",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S53",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S54",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S55",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S56",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S57",
+   "meldung": "Demoanwendung nicht verfügbar unspezifischer Fehler",
+   "klasse": "anwendung",
+   "synthetisch": true
+  },
+  {
+   "id": "S58",
+   "meldung": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "synthetisch": true
+  },
+  {
+   "id": "S59",
+   "meldung": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "synthetisch": true
+  },
+  {
+   "id": "S60",
+   "meldung": "Demoanwendung nicht verfügbar",
+   "klasse": "anwendung",
+   "synthetisch": true
+  }
+ ],
+ "aufteilung": {
+  "training": [
+   "S1",
+   "S2",
+   "S3",
+   "S4",
+   "S5",
+   "S6",
+   "S7",
+   "S8",
+   "S9",
+   "S10",
+   "S11",
+   "S12",
+   "S13",
+   "S14",
+   "S15",
+   "S16",
+   "S17",
+   "S18",
+   "S19",
+   "S20",
+   "S21",
+   "S22",
+   "S23",
+   "S24",
+   "S25",
+   "S26",
+   "S27",
+   "S28",
+   "S29",
+   "S30",
+   "S31",
+   "S32",
+   "S33",
+   "S34",
+   "S35",
+   "S36",
+   "S37",
+   "S38",
+   "S39",
+   "S40",
+   "S41",
+   "S42"
+  ],
+  "test": [
+   "S43",
+   "S44",
+   "S45",
+   "S46",
+   "S47",
+   "S48",
+   "S49",
+   "S50",
+   "S51",
+   "S52",
+   "S53",
+   "S54",
+   "S55",
+   "S56",
+   "S57",
+   "S58",
+   "S59",
+   "S60"
+  ]
+ },
+ "verschiedeneTexte": [
+  {
+   "text": "Verbindung zum Demorechner nicht möglich unspezifischer Fehler",
+   "anzahl": 3,
+   "imTraining": 2,
+   "imTest": 1
+  },
+  {
+   "text": "Zugriff auf Demoverzeichnis verweigert",
+   "anzahl": 17,
+   "imTraining": 12,
+   "imTest": 5
+  },
+  {
+   "text": "Demoanwendung nicht verfügbar",
+   "anzahl": 17,
+   "imTraining": 12,
+   "imTest": 5
+  },
+  {
+   "text": "Verbindung zum Demorechner nicht möglich",
+   "anzahl": 17,
+   "imTraining": 12,
+   "imTest": 5
+  },
+  {
+   "text": "Zugriff auf Demoverzeichnis verweigert unspezifischer Fehler",
+   "anzahl": 3,
+   "imTraining": 2,
+   "imTest": 1
+  },
+  {
+   "text": "Demoanwendung nicht verfügbar unspezifischer Fehler",
+   "anzahl": 3,
+   "imTraining": 2,
+   "imTest": 1
+  }
+ ],
+ "modell": {
+  "klassen": [
+   "anwendung",
+   "netzwerk",
+   "zugriff"
+  ],
+  "wortschatz": [
+   "auf",
+   "demoanwendung",
+   "demorechner",
+   "demoverzeichnis",
+   "fehler",
+   "möglich",
+   "nicht",
+   "unspezifischer",
+   "verbindung",
+   "verfügbar",
+   "verweigert",
+   "zugriff",
+   "zum"
+  ],
+  "idf": [
+   2.0531499145913523,
+   2.0531499145913523,
+   2.0531499145913523,
+   2.0531499145913523,
+   2.8152899666382494,
+   2.0531499145913523,
+   1.3939042857070885,
+   2.8152899666382494,
+   2.0531499145913523,
+   2.0531499145913523,
+   2.0531499145913523,
+   2.0531499145913523,
+   2.0531499145913523
+  ],
+  "featureLogProb": [
+   [
+    -3.6333493252337172,
+    -1.387193501047101,
+    -3.6333493252337172,
+    -3.6333493252337172,
+    -2.8916552546259546,
+    -3.6333493252337172,
+    -1.7256313209331748,
+    -2.8916552546259546,
+    -3.6333493252337172,
+    -1.387193501047101,
+    -3.6333493252337172,
+    -3.6333493252337172,
+    -3.6333493252337172
+   ],
+   [
+    -3.8013181734326653,
+    -3.8013181734326653,
+    -1.8026660602460958,
+    -3.8013181734326653,
+    -3.1301874204819904,
+    -1.8026660602460958,
+    -2.12780975950174,
+    -3.1301874204819904,
+    -1.8026660602460958,
+    -3.8013181734326653,
+    -3.8013181734326653,
+    -3.8013181734326653,
+    -1.8026660602460958
+   ],
+   [
+    -1.6903207532230868,
+    -3.733868151209359,
+    -3.733868151209359,
+    -1.6903207532230868,
+    -3.0485303132912582,
+    -3.733868151209359,
+    -3.733868151209359,
+    -3.0485303132912582,
+    -3.733868151209359,
+    -3.733868151209359,
+    -1.6903207532230868,
+    -1.6903207532230868,
+    -3.733868151209359
+   ]
+  ],
+  "klassenLogPrior": [
+   -1.09861228866811,
+   -1.09861228866811,
+   -1.09861228866811
+  ],
+  "alpha": 1.0
+ },
+ "referenz": [
+  {
+   "text": "Verbindung zum Demorechner nicht möglich",
+   "klasse": "netzwerk",
+   "wahrscheinlichkeiten": [
+    0.033795124279929804,
+    0.9515551732613399,
+    0.014649702458730318
+   ]
+  },
+  {
+   "text": "Demoanwendung nicht verfügbar unspezifischer Fehler",
+   "klasse": "anwendung",
+   "wahrscheinlichkeiten": [
+    0.8519855297927399,
+    0.08478276061087119,
+    0.06323170959638856
+   ]
+  },
+  {
+   "text": "Zugriff auf Demoverzeichnis verweigert",
+   "klasse": "zugriff",
+   "wahrscheinlichkeiten": [
+    0.019828253513010406,
+    0.01417061096097978,
+    0.9660011355260094
+   ]
+  },
+  {
+   "text": "Der Drucker im Büro druckt nicht",
+   "klasse": "anwendung",
+   "wahrscheinlichkeiten": [
+    0.5546045590319008,
+    0.37095357313384086,
+    0.07444186783425853
+   ]
+  },
+  {
+   "text": "Zugriff verweigert",
+   "klasse": "zugriff",
+   "wahrscheinlichkeiten": [
+    0.05747881738828493,
+    0.04532563033292893,
+    0.8971955522787863
+   ]
+  },
+  {
+   "text": "Verbindung verloren",
+   "klasse": "netzwerk",
+   "wahrscheinlichkeiten": [
+    0.1228121688034274,
+    0.7661204250795933,
+    0.11106740611697943
+   ]
+  },
+  {
+   "text": "Anwendung abgestürzt",
+   "klasse": "anwendung",
+   "wahrscheinlichkeiten": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ]
+  },
+  {
+   "text": "demoanwendung",
+   "klasse": "anwendung",
+   "wahrscheinlichkeiten": [
+    0.8437875625392248,
+    0.07547308384859745,
+    0.08073935361217781
+   ]
+  },
+  {
+   "text": "VERBINDUNG ZUM DEMORECHNER NICHT MÖGLICH",
+   "klasse": "netzwerk",
+   "wahrscheinlichkeiten": [
+    0.033795124279929804,
+    0.9515551732613399,
+    0.014649702458730318
+   ]
+  },
+  {
+   "text": "Zugriff auf die Anwendung nicht möglich",
+   "klasse": "zugriff",
+   "wahrscheinlichkeiten": [
+    0.15140139974138836,
+    0.291966404434523,
+    0.5566321958240888
+   ]
+  },
+  {
+   "text": "",
+   "klasse": "anwendung",
+   "wahrscheinlichkeiten": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ]
+  },
+  {
+   "text": "x",
+   "klasse": "anwendung",
+   "wahrscheinlichkeiten": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ]
+  }
+ ]
+}
